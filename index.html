@@ -3,47 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chandani's Portfolio</title>
+  <title>Chandani | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet" />
+  <script defer src="script.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
   <header>
-    <h1>Hi, I'm Chandani 👋</h1>
-    <p class="subtitle">Python lover • Web Dev Learner • Freelancer</p>
-    <img class="profile" src="IMG_20250607_122113_177.jpg" alt="Chandani's photo">
+    <button id="toggle-theme">🌙</button>
+    <h1>Hi, I'm <span class="highlight">Chandani</span></h1>
+    <p>17-year-old student from India 🇮🇳</p>
+    <p>Python & Web Development Learner</p>
+    <div class="social">
+      <a href="https://github.com/chandani-coder" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:chandniaditya65@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
   </header>
 
   <section>
     <h2>About Me</h2>
-    <p>I’m 17, passionate about tech and learning to build beautiful websites and apps with Python & HTML/CSS.</p>
+    <p>I’m passionate about coding and learning new things every day. My goal is to become a successful freelancer and help clients with beautiful, functional websites.</p>
   </section>
 
   <section>
     <h2>Skills</h2>
-    <div class="card-container">
-      <div class="card">🐍 Python</div>
-      <div class="card">🌐 HTML & CSS</div>
-      <div class="card">💻 Replit</div>
-      <div class="card">📦 Git & GitHub (Beginner)</div>
-    </div>
+    <ul class="skills">
+      <li>Python 🐍</li>
+      <li>HTML/CSS 🌐</li>
+      <li>Replit 💻</li>
+      <li>Git & GitHub</li>
+    </ul>
   </section>
 
   <section>
     <h2>Projects</h2>
-    <div class="card-container">
-      <div class="card">✅ To-Do App</div>
-      <div class="card">➕ Calculator App (Coming Soon)</div>
-    </div>
+    <ul class="projects">
+      <li>✅ To-Do App</li>
+      <li>🔢 Calculator Web App (Coming Soon)</li>
+    </ul>
   </section>
 
   <section>
-    <h2>Contact Me</h2>
+    <h2>Contact</h2>
     <p>Email: <a href="mailto:chandniaditya65@gmail.com">chandniaditya65@gmail.com</a></p>
   </section>
 
   <footer>
-    <p>Made with 💜 by Chandani</p>
+    <p>Made with ❤️ by Chandani</p>
   </footer>
 </body>
 </html>
