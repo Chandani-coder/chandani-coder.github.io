@@ -1,4 +1,4 @@
-/* Reset default margins and set background */
+/* Reset default styles and set background */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #1a2526;
+    background-color: #1c2526;
     color: #ffffff;
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -19,19 +19,32 @@ body {
     margin: 0 auto;
 }
 
-/* Header section with name, details, and image */
+/* Header section with name, role, and details */
 .header {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     margin-bottom: 30px;
+}
+
+.header-text {
+    flex: 1;
+    min-width: 250px;
 }
 
 .header h1 {
     font-size: 2.2em;
+    margin-bottom: 5px;
+}
+
+.header h2 {
+    font-size: 1.2em;
+    color: #cccccc;
     margin-bottom: 10px;
 }
 
 .header p {
-    font-size: 1.1em;
+    font-size: 1em;
     color: #cccccc;
     margin-bottom: 15px;
 }
@@ -40,24 +53,23 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin: 15px 0;
     background-color: #ccc; /* Placeholder for image */
+    margin-left: 20px;
 }
 
-/* LinkedIn button */
-.linkedin-btn {
+/* See My Work button */
+.work-btn {
     display: inline-block;
-    background-color: #0077b5;
+    background-color: #ff4d4d;
     color: #ffffff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    margin-top: 10px;
 }
 
-.linkedin-btn:hover {
-    background-color: #005f8d;
+.work-btn:hover {
+    background-color: #e04343;
 }
 
 /* Section styles */
@@ -65,38 +77,38 @@ body {
     margin-bottom: 30px;
 }
 
-.section h2 {
-    font-size: 1.5em;
+.section h3 {
+    font-size: 1.3em;
     margin-bottom: 15px;
-    border-bottom: 1px solid #cccccc;
-    padding-bottom: 5px;
+    text-transform: uppercase;
 }
 
-.section p, .section li {
-    font-size: 1.1em;
+/* Services section with icons */
+.services, .skills, .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.service-item, .skill-item, .project-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-placeholder {
+    width: 30px;
+    height: 30px;
+    background-color: #666; /* Placeholder for icons */
+    border-radius: 5px;
+}
+
+.service-item p, .skill-item p, .project-item p {
+    font-size: 1em;
     color: #cccccc;
 }
 
-/* List styles for skills and projects */
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 20px;
-}
-
-ul li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #ffffff;
-}
-
-/* Contact email */
+/* Contact section */
 .contact a {
     color: #cccccc;
     text-decoration: none;
