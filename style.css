@@ -1,120 +1,86 @@
-/* Reset default styles and set background */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandani's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="header-text">
+                <h1>Hello,
+               I'm Chandani 👋</h1>
+                <h2>Python Lover • Web Developer</h2>
+                <h2>Based in India 🇮🇳</h2>
+                <p>I specialize in creating stunning, responsive websites using modern web technologies.</p>
+                <a href="#projects" class="work-btn">See My Work</a>
+            </div>
+            <div class="IMG_20250607_122113_177"></div>
+        </div>
 
-body {
-    background-color: #1c2526;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-}
+        <!-- Services Section -->
+        <div class="section">
+            <h3>My Services</h3>
+            <div class="services">
+                <div class="service-item">
+                    <div class="icon-placeholder"></div>
+                    <p>Website Development</p>
+                </div>
+                <div class="service-item">
+                    <div class="icon-placeholder"></div>
+                    <p>Frontend Development</p>
+                </div>
+                <div class="service-item">
+                    <div class="icon-placeholder"></div>
+                    <p>Freelance Work</p>
+                </div>
+            </div>
+        </div>
 
-/* Container to center content */
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-}
+        <!-- Skills Section -->
+        <div class="section">
+            <h3>Skills</h3>
+            <div class="skills">
+                <div class="skill-item">
+                    <div class="icon-placeholder"></div>
+                    <p>Python</p>
+                </div>
+                <div class="skill-item">
+                    <div class="icon-placeholder"></div>
+                    <p>HTML & CSS</p>
+                </div>
+                <div class="skill-item">
+                    <div class="icon-placeholder"></div>
+                    <p>Git</p>
+                </div>
+                <div class="skill-item">
+                    <div class="icon-placeholder"></div>
+                    <p>Javascript</p>
+                </div>
+            </div>
+        </div>
 
-/* Header section with name, role, and details */
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 30px;
-}
+        <!-- Projects Section -->
+        <div class="section" id="projects">
+            <h3>Projects</h3>
+            <div class="projects">
+                <div class="project-item">
+                    <p>• To-Do App</p>
+                </div>
+                <div class="project-item">
+                    <p>• Calculator App (Coming Soon)</p>
+                </div>
+            </div>
+        </div>
 
-.header-text {
-    flex: 1;
-    min-width: 250px;
-}
-
-.header h1 {
-    font-size: 2.2em;
-    margin-bottom: 5px;
-}
-
-.header h2 {
-    font-size: 1.2em;
-    color: #cccccc;
-    margin-bottom: 10px;
-}
-
-.header p {
-    font-size: 1em;
-    color: #cccccc;
-    margin-bottom: 15px;
-}
-
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #ccc; /* Placeholder for image */
-    margin-left: 20px;
-}
-
-/* See My Work button */
-.work-btn {
-    display: inline-block;
-    background-color: #ff4d4d;
-    color: #ffffff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.work-btn:hover {
-    background-color: #e04343;
-}
-
-/* Section styles */
-.section {
-    margin-bottom: 30px;
-}
-
-.section h3 {
-    font-size: 1.3em;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-/* Services section with icons */
-.services, .skills, .projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.service-item, .skill-item, .project-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.icon-placeholder {
-    width: 30px;
-    height: 30px;
-    background-color: #666; /* Placeholder for icons */
-    border-radius: 5px;
-}
-
-.service-item p, .skill-item p, .project-item p {
-    font-size: 1em;
-    color: #cccccc;
-}
-
-/* Contact section */
-.contact a {
-    color: #cccccc;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-}
+        <!-- Contact Section -->
+        <div class="section contact">
+            <h3>Contact</h3>
+            <p><a href="mailto:chandniaditya65@gmail.com">chandniaditya65@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
