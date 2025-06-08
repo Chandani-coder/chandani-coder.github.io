@@ -1,45 +1,108 @@
-
-  color: #ff7b72;
-}
-.about p,
-.contact p {
-  max-width: 700px;
-  margin: auto;
-  text-align: center;
-}
-.skills .skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 10px;
-}
-.skill-tags span {
-  background-color: #21262d;
-  padding: 8px 16px;
-  border-radius: 20px;
-  color: #c9d1d9;
-  font-weight: 500;
-}
-.projects .project-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-.card {
-  background-color: #21262d;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
-  text-align: center;
-  color: #e6edf3;
-}
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #161b22;
-  color: #8b949e;
-  font-size: 0.9rem;
+/* Reset default margins and set background */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    background-color: #1a2526;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container to center content */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Header section with name, details, and image */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.1em;
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 15px 0;
+    background-color: #ccc; /* Placeholder for image */
+}
+
+/* LinkedIn button */
+.linkedin-btn {
+    display: inline-block;
+    background-color: #0077b5;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.linkedin-btn:hover {
+    background-color: #005f8d;
+}
+
+/* Section styles */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px;
+}
+
+.section p, .section li {
+    font-size: 1.1em;
+    color: #cccccc;
+}
+
+/* List styles for skills and projects */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+}
+
+/* Contact email */
+.contact a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
