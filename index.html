@@ -2,51 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chandani | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chandani | Developer Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <button id="toggle-theme">🌙</button>
-    <h1>Hi, I'm <span class="highlight">Chandani</span></h1>
-    <p>17-year-old student from India 🇮🇳</p>
-    <p>Python & Web Development Learner</p>
-    <div class="social">
-      <a href="https://github.com/chandani-coder" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:chandniaditya65@gmail.com"><i class="fas fa-envelope"></i></a>
+  <header class="hero">
+    <div class="container">
+      <div class="intro">
+        <h1>Hello, I'm <span class="highlight">Chandani</span> 👋</h1>
+        <p class="tagline">A 17-year-old Student • Python Developer • Web Learner • Based in India 🇮🇳</p>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+      <div class="profile-img">
+        <img src="your-photo.jpg" alt="Chandani" />
+      </div>
     </div>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I’m passionate about coding and learning new things every day. My goal is to become a successful freelancer and help clients with beautiful, functional websites.</p>
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm Chandani, a passionate 17-year-old student from India who loves learning Python, HTML, and CSS to build beautiful and functional websites & apps. I'm currently exploring freelancing and building my portfolio step-by-step!</p>
+    </div>
   </section>
 
-  <section>
-    <h2>Skills</h2>
-    <ul class="skills">
-      <li>Python 🐍</li>
-      <li>HTML/CSS 🌐</li>
-      <li>Replit 💻</li>
-      <li>Git & GitHub</li>
-    </ul>
+  <section class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skill-tags">
+        <span>🐍 Python</span>
+        <span>💻 HTML</span>
+        <span>🎨 CSS</span>
+        <span>🌐 Git & GitHub</span>
+        <span>⚙️ Replit</span>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul class="projects">
-      <li>✅ To-Do App</li>
-      <li>🔢 Calculator Web App (Coming Soon)</li>
-    </ul>
+  <section class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-cards">
+        <div class="card">
+          <h3>✅ To-Do App</h3>
+          <p>A simple productivity app made with HTML, CSS, and Python.</p>
+        </div>
+        <div class="card">
+          <h3>🧮 Calculator App</h3>
+          <p>Coming Soon...</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:chandniaditya65@gmail.com">chandniaditya65@gmail.com</a></p>
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>📧 <a href="mailto:chandniaditya65@gmail.com">chandniaditya65@gmail.com</a></p>
+      <p>🔗 <a href="https://www.linkedin.com/in/your-link" target="_blank">LinkedIn Profile</a></p>
+    </div>
   </section>
 
   <footer>
